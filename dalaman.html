@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air Navigator</title>
+    <title>Аэропорт Даламана - Air Navigator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,9 +16,6 @@
             color: #333;
             margin-top: 20px;
         }
-        p {
-            color: #555;
-        }
         .section {
             margin: 20px;
             padding: 20px;
@@ -26,44 +23,72 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .section h2 {
-            color: #333;
-        }
-        .section p {
-            color: #555;
-        }
-        .airport-selector {
-            margin: 20px;
+        .section a {
+            display: block;
+            margin: 10px 0;
             padding: 10px;
             background-color: #333;
             color: white;
-            border: none;
+            text-decoration: none;
             border-radius: 5px;
-            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>Навигатор по аэропорту Даламана</h1>
-<p>Это ваша персональная страница для навигации по аэропорту Даламана.</p>
-
+    <h1>Навигатор по аэропорту Внуково</h1>
+    <p>Выберите интересующий вас раздел:</p>
 
     <div class="section">
-        <h2>Выберите аэропорт</h2>
-        <select class="airport-selector" onchange="navigateToAirport(this.value)">
-            <option value="">Выберите аэропорт</option>
-            <option value="vnukovo">Внуково</option>
-            <option value="dalaman">Международный аэропорт Даламана</option>
-        </select>
+        <a href="#registration">Регистрация</a>
+        <a href="#boarding">Выход на посадку</a>
+        <a href="#vip">ВИП-зал</a>
+        <a href="#toilet">Туалет</a>
+        <a href="#cafe">Кафе</a>
+        <a href="#medical">Медицинский пункт</a>
+        <a href="#police">Полицейский участок</a>
+        <a href="#exchange">Обменный пункт</a>
     </div>
 
-    <script>
-        function navigateToAirport(airport) {
-            if (airport) {
-                // Перенаправление на соответствующую страницу или раздел
-                window.location.href = airport + ".html";
-            }
-        }
-    </script>
+    <!-- Здесь можно добавить контент для каждой секции -->
+    <div id="registration" class="section">
+        <h2>Регистрация</h2>
+        <p>Здесь будет информация о регистрации.</p>
+    </div>
+
+    <div id="boarding" class="section">
+        <h2>Выход на посадку</h2>
+        <p>Здесь будет информация о выходе на посадку.</p>
+    </div>
+
+    <div id="vip" class="section">
+        <h2>ВИП-зал</h2>
+        <p>Здесь будет информация о ВИП-зале.</p>
+    </div>
+
+    <div id="toilet" class="section">
+        <h2>Туалет</h2>
+        <p>Здесь будет информация о туалетах.</p>
+    </div>
+
+    <div id="cafe" class="section">
+        <h2>Кафе</h2>
+        <p>Здесь будет информация о кафе.</p>
+    </div>
+
+    <div id="medical" class="section">
+        <h2>Медицинский пункт</h2>
+        <p>Здесь будет информация о медицинском пункте.</p>
+    </div>
+
+    <div id="police" class="section">
+        <h2>Полицейский участок</h2>
+        <p>Здесь будет информация о полицейском участке.</p>
+    </div>
+
+    <div id="exchange" class="section">
+        <h2>Обменный пункт</h2>
+        <p>Здесь будет информация о пункте обмена валют.</p>
+    </div>
+
 </body>
 </html>
