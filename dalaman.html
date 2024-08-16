@@ -3,103 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аэропорт Даламан - Air Navigator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: #333;
-            margin-top: 20px;
-        }
-        .section {
-            margin: 20px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .section a {
-            display: block;
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .back-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #555;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Даламан - Навигация</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Навигатор по аэропорту Даламан</h1>
-    <p>Выберите интересующий вас раздел:</p>
-
-    <div class="section">
-        <a href="dalaman.html#registration">Регистрация</a>
-        <a href="dalaman.html#boarding">Выход на посадку</a>
-        <a href="dalaman.html#vip">ВИП-зал</a>
-        <a href="dalaman.html#toilet">Туалет</a>
-        <a href="dalaman.html#cafe">Кафе</a>
-        <a href="dalaman.html#medical">Медицинский пункт</a>
-        <a href="dalaman.html#police">Полицейский участок</a>
-        <a href="dalaman.html#exchange">Обменный пункт</a>
-    </div>
-
-    <a href="index.html" class="back-button">Назад к выбору аэропорта</a>
-
-    <!-- Разделы -->
-    <div id="registration" class="section">
-        <h2>Регистрация</h2>
-        <p>Здесь будет информация о регистрации.</p>
-    </div>
-
-    <div id="boarding" class="section">
-        <h2>Выход на посадку</h2>
-        <p>Здесь будет информация о выходе на посадку.</p>
-    </div>
-
-    <div id="vip" class="section">
-        <h2>ВИП-зал</h2>
-        <p>Здесь будет информация о ВИП-зале.</p>
-    </div>
-
-    <div id="toilet" class="section">
-        <h2>Туалет</h2>
-        <p>Здесь будет информация о туалетах.</p>
-    </div>
-
-    <div id="cafe" class="section">
-        <h2>Кафе</h2>
-        <p>Здесь будет информация о кафе.</p>
-    </div>
-
-    <div id="medical" class="section">
-        <h2>Медицинский пункт</h2>
-        <p>Здесь будет информация о медицинском пункте.</p>
-    </div>
-
-    <div id="police" class="section">
-        <h2>Полицейский участок</h2>
-        <p>Здесь будет информация о полицейском участке.</p>
-    </div>
-
-    <div id="exchange" class="section">
-        <h2>Обменный пункт</h2>
-        <p>Здесь будет информация о пункте обмена валют.</p>
-    </div>
-
+    <h1>Даламан</h1>
+    <ul>
+        <li><a href="baggage_dalaman.html">Получение багажа</a></li>
+        <li><a href="toilets_dalaman.html">Туалеты</a></li>
+        <li><a href="vip_dalaman.html">ВИП-зал</a></li>
+        <li><a href="medical_dalaman.html">Медицинский пункт</a></li>
+        <li><a href="police_dalaman.html">Полицейский участок</a></li>
+        <li><a href="exchange_dalaman.html">Обменный пункт</a></li>
+        <li><a href="atm_dalaman.html">Банкомат</a></li>
+        <li><a href="sim_dalaman.html">Покупка SIM-карты</a></li>
+        <li><a href="taxi_dalaman.html">Остановка такси</a></li>
+    </ul>
+    <button onclick="window.history.back()">Назад к выбору аэропорта</button>
 </body>
 </html>
