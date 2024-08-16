@@ -3,22 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Даламан - Навигация</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Даламан</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+            font-size: 22px;
+        }
+        .section p {
+            color: #555;
+            font-size: 16px;
+        }
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Даламан</h1>
-    <ul>
-        <li><a href="baggage_dalaman.html">Получение багажа</a></li>
-        <li><a href="toilets_dalaman.html">Туалеты</a></li>
-        <li><a href="vip_dalaman.html">ВИП-зал</a></li>
-        <li><a href="medical_dalaman.html">Медицинский пункт</a></li>
-        <li><a href="police_dalaman.html">Полицейский участок</a></li>
-        <li><a href="exchange_dalaman.html">Обменный пункт</a></li>
-        <li><a href="atm_dalaman.html">Банкомат</a></li>
-        <li><a href="sim_dalaman.html">Покупка SIM-карты</a></li>
-        <li><a href="taxi_dalaman.html">Остановка такси</a></li>
-    </ul>
-    <button onclick="window.history.back()">Назад к выбору аэропорта</button>
+    <h1>Международный аэропорт Даламана</h1>
+    <a href="index.html" class="back-button">Вернуться к выбору аэропорта</a>
+
+    <div class="section">
+        <h2>Разделы Даламан</h2>
+        <p>Здесь вы можете найти информацию о различных разделах.</p>
+        <ul>
+            <li><a href="baggage_dalaman.html">Багаж</a></li>
+            <li><a href="vip_dalaman.html">Вип-зал</a></li>
+            <li><a href="toilet_dalaman.html">Туалет</a></li>
+            <li><a href="cafe_dalaman.html">Кафе</a></li>
+            <li><a href="medical_dalaman.html">Медицинский пункт</a></li>
+            <li><a href="police_dalaman.html">Полицейский участок</a></li>
+            <li><a href="exchange_dalaman.html">Обменный пункт</a></li>
+            <li><a href="taxi_dalaman.html">Остановка такси</a></li>
+        </ul>
+    </div>
 </body>
 </html>

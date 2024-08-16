@@ -3,22 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Внуково - Навигация</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Внуково</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+            font-size: 22px;
+        }
+        .section p {
+            color: #555;
+            font-size: 16px;
+        }
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Внуково</h1>
-    <ul>
-        <li><a href="baggage_vnukovo.html">Получение багажа</a></li>
-        <li><a href="toilets_vnukovo.html">Туалеты</a></li>
-        <li><a href="vip_vnukovo.html">ВИП-зал</a></li>
-        <li><a href="medical_vnukovo.html">Медицинский пункт</a></li>
-        <li><a href="police_vnukovo.html">Полицейский участок</a></li>
-        <li><a href="exchange_vnukovo.html">Обменный пункт</a></li>
-        <li><a href="atm_vnukovo.html">Банкомат</a></li>
-        <li><a href="sim_vnukovo.html">Покупка SIM-карты</a></li>
-        <li><a href="taxi_vnukovo.html">Остановка такси</a></li>
-    </ul>
-    <button onclick="window.history.back()">Назад к выбору аэропорта</button>
+    <h1>Аэропорт Внуково</h1>
+    <a href="index.html" class="back-button">Вернуться к выбору аэропорта</a>
+
+    <div class="section">
+        <h2>Разделы Внуково</h2>
+        <p>Здесь вы можете найти информацию о различных разделах.</p>
+        <ul>
+            <li><a href="baggage_vnukovo.html">Багаж</a></li>
+            <li><a href="vip_vnukovo.html">Вип-зал</a></li>
+            <li><a href="toilet_vnukovo.html">Туалет</a></li>
+            <li><a href="cafe_vnukovo.html">Кафе</a></li>
+            <li><a href="medical_vnukovo.html">Медицинский пункт</a></li>
+            <li><a href="police_vnukovo.html">Полицейский участок</a></li>
+            <li><a href="exchange_vnukovo.html">Обменный пункт</a></li>
+            <li><a href="taxi_vnukovo.html">Остановка такси</a></li>
+        </ul>
+    </div>
 </body>
 </html>
