@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о рейсе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Информация о рейсе</h1>
+    <a href="index.html" class="back-button">Вернуться к выбору аэропорта</a>
+
+    <div class="section">
+        <h2>Введите номер рейса</h2>
+        <p>Укажите номер вашего рейса, чтобы получить информацию о стойках регистрации и других сервисах.</p>
+        <input type="text" id="flightNumber" placeholder="Введите номер рейса">
+        <button onclick="getFlightInfo()">Получить информацию</button>
+    </div>
+
+    <div id="flightInfoSection" class="section" style="display:none;">
+        <h2>Информация о рейсе</h2>
+        <p id="flightInfoText"></p>
+        <ul id="flightSections">
+            <!-- Здесь будут добавлены разделы в зависимости от информации о рейсе -->
+        </ul>
+    </div>
+
+    <script>
+        function getFlightInfo() {
+            const flightNumber = document.getElementById('flightNumber').value;
+            const flightInfoSection = document.getElementById('flightInfoSection');
+            const flightInfoText = document.getElementById('flightInfoText');
+            const flightSections = document.getElementById('flightSections');
+
+            // Пример простой логики для отображения информации о рейсе
+            if (flightNumber === '123') {
+                flightInfoText.textContent = 'Рейс 123. Стойка регистрации: 10. Гейт: A3. Время вылета: 14:00.';
+                flightSections.innerHTML = `
+                    <li><a href="checkin_123.html">Стойка регистрации</a></li>
+                    <li><a href="gate_123.html">Гейт A3</a></li>
+                    <li><a href="luggage_123.html">Получение багажа</a></li>
+                `;
+            } else {
+                flightInfoText.textContent = 'Информация о рейсе не найдена. Пожалуйста, проверьте номер рейса и попробуйте снова.';
+                flightSections.innerHTML = '';
+            }
+
+            flightInfoSection.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
