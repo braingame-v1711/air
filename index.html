@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Международный аэропорт Даламана</title>
+    <title>Air Navigator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Международный аэропорт Даламана</h1>
-    <a href="index.html" class="back-button">Вернуться к выбору аэропорта</a>
+    <h1>Добро пожаловать в Air Navigator!</h1>
+    <p>Это ваше персональное приложение для навигации по аэропортам.</p>
 
     <div class="section">
-        <h2>Разделы Даламан</h2>
-        <p>Здесь вы можете найти информацию о различных разделах.</p>
-        <ul>
-            <li><a href="baggage_dalaman.html">Багаж</a></li>
-            <li><a href="vip_dalaman.html">Вип-зал</a></li>
-            <li><a href="toilet_dalaman.html">Туалет</a></li>
-            <li><a href="cafe_dalaman.html">Кафе</a></li>
-            <li><a href="medical_dalaman.html">Медицинский пункт</a></li>
-            <li><a href="police_dalaman.html">Полицейский участок</a></li>
-            <li><a href="exchange_dalaman.html">Обменный пункт</a></li>
-            <li><a href="taxi_dalaman.html">Остановка такси</a></li>
-        </ul>
+        <h2>Выберите аэропорт</h2>
+        <select class="airport-selector" onchange="navigateToAirport(this.value)">
+            <option value="">Выберите аэропорт</option>
+            <option value="vnukovo">Внуково</option>
+            <option value="dalaman">Международный аэропорт Даламана</option>
+        </select>
     </div>
+
+    <script>
+        function navigateToAirport(airport) {
+            if (airport) {
+                // Перенаправление на соответствующую страницу или раздел
+                window.location.href = airport + ".html";
+            }
+        }
+    </script>
 </body>
 </html>
